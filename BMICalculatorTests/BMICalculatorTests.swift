@@ -17,7 +17,7 @@ class BMICalculatorTests: XCTestCase {
         
         //act
         for testCase in testCases {
-            let actual = calculator.calculateBmi(weight: testCase.weight, height: testCase.height)
+            let actual = calculator.calculateBMI(weight: testCase.weight, height: testCase.height)
             //assert
             XCTAssertEqual(actual, testCase.expected)
         }
